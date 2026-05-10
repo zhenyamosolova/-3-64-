@@ -1,0 +1,7221 @@
+{
+  "login": "Мосолова Евгения (0be2e76a-07d1-4709-9ee5-1a680747cd4f)",
+  "graphState": [
+    {
+      "id": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Обучение с учителем"
+        }
+      },
+      "edges": [
+        "8458c487-87aa-4458-b690-5a3e0bd20f27",
+        "dd86c0e8-1712-48c1-915b-a98d76dd21f7",
+        "4e267a47-541b-41fa-a475-2eb862edb987",
+        "dd277914-1d8e-4d7b-847b-3319f0efd2d4",
+        "fb2ffc78-55e6-41c0-995a-4a648aa25bd5",
+        "dfea10fa-0407-4e7b-82de-b445d90717bb",
+        "774d2072-a4c0-46f0-b556-c0cbe897c8a7",
+        "e5117d35-6154-4f33-bb89-dc178d451c28",
+        "16d05cbc-9d16-4666-acdc-94d1db3d6b9d",
+        "fe113def-e372-4c80-9e6f-0d02994a18ea"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Обучающая выборка"
+        }
+      },
+      "edges": [
+        "8458c487-87aa-4458-b690-5a3e0bd20f27",
+        "89942ddb-4c6e-4fce-8c0c-58b544d5c056",
+        "1f5d0412-9873-43fc-92cf-a2382d145367"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Тестовая выборка"
+        }
+      },
+      "edges": [
+        "dd86c0e8-1712-48c1-915b-a98d76dd21f7"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "3625b357-72aa-463e-b92e-b859a91acd92",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Кросс-валидация"
+        }
+      },
+      "edges": [
+        "4e267a47-541b-41fa-a475-2eb862edb987"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Признаки"
+        }
+      },
+      "edges": [
+        "e5e59355-d43f-47e6-823e-151249afd054"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Вектор признаков"
+        }
+      },
+      "edges": [
+        "e5e59355-d43f-47e6-823e-151249afd054",
+        "1f5d0412-9873-43fc-92cf-a2382d145367"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+      "type": "metavertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Метка / целевая переменная"
+        }
+      },
+      "edges": [
+        "89942ddb-4c6e-4fce-8c0c-58b544d5c056"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "2244da16-ecf7-4bab-a6ef-be6ed49e1f19",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Классификация"
+        }
+      },
+      "edges": [
+        "dd277914-1d8e-4d7b-847b-3319f0efd2d4"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "c8b0d53e-3188-48f0-aa97-9b4314eddbd8",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Регрессия"
+        }
+      },
+      "edges": [
+        "fb2ffc78-55e6-41c0-995a-4a648aa25bd5"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "03d98c04-a248-410d-98cd-01907856f72b",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Алгоритмы"
+        }
+      },
+      "edges": [
+        "774d2072-a4c0-46f0-b556-c0cbe897c8a7",
+        "3610abad-1892-4886-ac0c-a0c439cdd60b",
+        "b1ca95cc-89cd-4129-827e-0d8b0551cd64"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Параметры модели"
+        }
+      },
+      "edges": [
+        "3610abad-1892-4886-ac0c-a0c439cdd60b"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Гиперпараметры"
+        }
+      },
+      "edges": [
+        "b1ca95cc-89cd-4129-827e-0d8b0551cd64"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "02d07e38-503e-4856-a1d5-679acab47993",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Функция потерь"
+        }
+      },
+      "edges": [
+        "dfea10fa-0407-4e7b-82de-b445d90717bb",
+        "c310466d-68e5-4d6d-af29-0840cbeee4ac",
+        "6e920163-fe4e-48b9-b3aa-be07234dcb07"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Метрики качества"
+        }
+      },
+      "edges": [
+        "72822807-7b6d-44c3-8c2f-74a1a8a78a66",
+        "95e08ba8-a59d-40ec-800a-d2a1da8f1961",
+        "fe113def-e372-4c80-9e6f-0d02994a18ea"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "d88b670f-2d85-465e-a5fc-bdb09705a9ab",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Переобучение"
+        }
+      },
+      "edges": [
+        "e5117d35-6154-4f33-bb89-dc178d451c28",
+        "71c90777-5cf6-4a1d-ab05-1a3d06eec53c"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "d75a8402-4255-4df3-86fc-1270c30885eb",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Недообучение"
+        }
+      },
+      "edges": [
+        "16d05cbc-9d16-4666-acdc-94d1db3d6b9d"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "b5241534-7ecf-4cff-abf0-bf5e15a3fb97",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Регуляризация"
+        }
+      },
+      "edges": [
+        "71c90777-5cf6-4a1d-ab05-1a3d06eec53c"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Среднеквадратичная ошибка"
+        }
+      },
+      "edges": [
+        "c310466d-68e5-4d6d-af29-0840cbeee4ac"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Кросс-энтропия"
+        }
+      },
+      "edges": [
+        "6e920163-fe4e-48b9-b3aa-be07234dcb07"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "Точность, полнота, precision, F1"
+        }
+      },
+      "edges": [
+        "a00fceff-ccfd-4ee3-9827-172049977711",
+        "72822807-7b6d-44c3-8c2f-74a1a8a78a66"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+      "type": "vertex",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "MAE, MSE, R²"
+        }
+      },
+      "edges": [
+        "95e08ba8-a59d-40ec-800a-d2a1da8f1961"
+      ],
+      "children": [],
+      "parents": []
+    },
+    {
+      "id": "8458c487-87aa-4458-b690-5a3e0bd20f27",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "использует"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "target": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+      "directed": true
+    },
+    {
+      "id": "dd86c0e8-1712-48c1-915b-a98d76dd21f7",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "использует"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "target": "19547ea1-5165-4005-a480-9958d6ad8a97",
+      "directed": true
+    },
+    {
+      "id": "4e267a47-541b-41fa-a475-2eb862edb987",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "может использовать"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "target": "3625b357-72aa-463e-b92e-b859a91acd92",
+      "directed": true
+    },
+    {
+      "id": "dd277914-1d8e-4d7b-847b-3319f0efd2d4",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "включает в себя"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "target": "2244da16-ecf7-4bab-a6ef-be6ed49e1f19",
+      "directed": true
+    },
+    {
+      "id": "fb2ffc78-55e6-41c0-995a-4a648aa25bd5",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "включает в себя"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "target": "c8b0d53e-3188-48f0-aa97-9b4314eddbd8",
+      "directed": true
+    },
+    {
+      "id": "dfea10fa-0407-4e7b-82de-b445d90717bb",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "минимизирует"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "target": "02d07e38-503e-4856-a1d5-679acab47993",
+      "directed": true
+    },
+    {
+      "id": "774d2072-a4c0-46f0-b556-c0cbe897c8a7",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "решается с помощью"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "target": "03d98c04-a248-410d-98cd-01907856f72b",
+      "directed": true
+    },
+    {
+      "id": "e5117d35-6154-4f33-bb89-dc178d451c28",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "может страдать от"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "target": "d88b670f-2d85-465e-a5fc-bdb09705a9ab",
+      "directed": true
+    },
+    {
+      "id": "16d05cbc-9d16-4666-acdc-94d1db3d6b9d",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "может страдать от"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "target": "d75a8402-4255-4df3-86fc-1270c30885eb",
+      "directed": true
+    },
+    {
+      "id": "e5e59355-d43f-47e6-823e-151249afd054",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "состоит из"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+      "target": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+      "directed": true
+    },
+    {
+      "id": "89942ddb-4c6e-4fce-8c0c-58b544d5c056",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "содержит для каждого примера"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+      "target": "bb218385-2ff1-4d25-b837-6a39cef09536",
+      "directed": true
+    },
+    {
+      "id": "3610abad-1892-4886-ac0c-a0c439cdd60b",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "настраивают"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "03d98c04-a248-410d-98cd-01907856f72b",
+      "target": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+      "directed": true
+    },
+    {
+      "id": "b1ca95cc-89cd-4129-827e-0d8b0551cd64",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "задаются до обучения"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "03d98c04-a248-410d-98cd-01907856f72b",
+      "target": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+      "directed": true
+    },
+    {
+      "id": "c310466d-68e5-4d6d-af29-0840cbeee4ac",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "пример"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "02d07e38-503e-4856-a1d5-679acab47993",
+      "target": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+      "directed": true
+    },
+    {
+      "id": "6e920163-fe4e-48b9-b3aa-be07234dcb07",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "пример"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "02d07e38-503e-4856-a1d5-679acab47993",
+      "target": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+      "directed": true
+    },
+    {
+      "id": "72822807-7b6d-44c3-8c2f-74a1a8a78a66",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "пример"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+      "target": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+      "directed": true
+    },
+    {
+      "id": "71c90777-5cf6-4a1d-ab05-1a3d06eec53c",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "борется с помощью"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "d88b670f-2d85-465e-a5fc-bdb09705a9ab",
+      "target": "b5241534-7ecf-4cff-abf0-bf5e15a3fb97",
+      "directed": true
+    },
+    {
+      "id": "95e08ba8-a59d-40ec-800a-d2a1da8f1961",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "пример"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+      "target": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+      "directed": true
+    },
+    {
+      "id": "1f5d0412-9873-43fc-92cf-a2382d145367",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "содержит"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+      "target": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+      "directed": true
+    },
+    {
+      "id": "fe113def-e372-4c80-9e6f-0d02994a18ea",
+      "type": "edge",
+      "attributes": {
+        "name": {
+          "type": "string",
+          "system": false,
+          "value": "оценивается с помощью"
+        }
+      },
+      "edges": [],
+      "children": [],
+      "parents": [],
+      "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+      "target": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+      "directed": true
+    }
+  ],
+  "actionLog": [
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "login",
+        "label": "Имя пользователя"
+      },
+      "timestamp": 1778318850717
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318865225
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318874179
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Обучение с учителем"
+      },
+      "timestamp": 1778318874821
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Обучение с учителем"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318875748
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318880808
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318881131
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Обучающая выборка"
+      },
+      "timestamp": 1778318881719
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Обучающая выборка"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318882379
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318886611
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318886979
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Тестовая выборка"
+      },
+      "timestamp": 1778318887440
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Тестовая выборка"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318888397
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318892725
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318893062
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Кросс-валидация"
+      },
+      "timestamp": 1778318893541
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "3625b357-72aa-463e-b92e-b859a91acd92",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Кросс-валидация"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318894662
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318899359
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318900063
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Признаки"
+      },
+      "timestamp": 1778318900620
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Признаки"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318901511
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318905908
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318906329
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Вектор признаков"
+      },
+      "timestamp": 1778318906796
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Вектор признаков"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318907628
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318911361
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318911713
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Метка / целевая переменная"
+      },
+      "timestamp": 1778318912125
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Метка / целевая переменная"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318912945
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318917179
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318917712
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Классификация"
+      },
+      "timestamp": 1778318918103
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "2244da16-ecf7-4bab-a6ef-be6ed49e1f19",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Классификация"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318918962
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318923311
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318924313
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Регрессия"
+      },
+      "timestamp": 1778318924922
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "c8b0d53e-3188-48f0-aa97-9b4314eddbd8",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Регрессия"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318925798
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318930242
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318930565
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Алгоритмы"
+      },
+      "timestamp": 1778318931084
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Алгоритмы"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318931981
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318936025
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318936364
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Параметры модели"
+      },
+      "timestamp": 1778318936892
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Параметры модели"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318937696
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318943544
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318943879
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Гиперпараметры"
+      },
+      "timestamp": 1778318944564
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Гиперпараметры"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318945279
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318948944
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318949479
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Функция потерь"
+      },
+      "timestamp": 1778318950018
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "02d07e38-503e-4856-a1d5-679acab47993",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Функция потерь"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318958763
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318963647
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318964018
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Метрики качества"
+      },
+      "timestamp": 1778318964584
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Метрики качества"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318965381
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318969080
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318969395
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Переобучение"
+      },
+      "timestamp": 1778318969955
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "d88b670f-2d85-465e-a5fc-bdb09705a9ab",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Переобучение"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318970829
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318975680
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318976197
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Недообучение"
+      },
+      "timestamp": 1778318976677
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "d75a8402-4255-4df3-86fc-1270c30885eb",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Недообучение"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318977380
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318981265
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318981580
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "м"
+      },
+      "timestamp": 1778318982153
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "b5241534-7ecf-4cff-abf0-bf5e15a3fb97",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "м"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318983065
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318986968
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": ""
+      },
+      "timestamp": 1778318987806
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Регуляризация"
+      },
+      "timestamp": 1778318988468
+    },
+    {
+      "name": "apply-element",
+      "payload": {
+        "id": "b5241534-7ecf-4cff-abf0-bf5e15a3fb97",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Регуляризация"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318989650
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318990694
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778318994484
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Среднеквадратичная ошибка"
+      },
+      "timestamp": 1778318994972
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Среднеквадратичная ошибка"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778318995697
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778318999650
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778319000097
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Кросс-энтропия"
+      },
+      "timestamp": 1778319000559
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Кросс-энтропия"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778319001631
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778319005444
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778319006148
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "Точность, полнота, precision, F1"
+      },
+      "timestamp": 1778319006643
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Точность, полнота, precision, F1"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778319007449
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778319020534
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778319021118
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "MAE, MSE, R²"
+      },
+      "timestamp": 1778319021546
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "type": "vertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "MAE, MSE, R²"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778319022423
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 1.21562605523738
+      },
+      "timestamp": 1778319023480
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 1.2022644346174132
+      },
+      "timestamp": 1778319023682
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 1.1365807183865853
+      },
+      "timestamp": 1778319024149
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 1.0607181496353155
+      },
+      "timestamp": 1778319026397
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 1.0299117193407001
+      },
+      "timestamp": 1778319026833
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.8438002021339787
+      },
+      "timestamp": 1778319027447
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 465.7619562285879,
+          "y": 287.31525607653975
+        }
+      },
+      "timestamp": 1778319028896
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778319165854
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778319166440
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "MAE, MSE, R²"
+      },
+      "timestamp": 1778319166944
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778319167587
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778319168418
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778319177692
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778319178820
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750"
+        }
+      },
+      "timestamp": 1778319178479
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "49334ba9-587e-409f-ae53-1b9deccfdb74"
+        }
+      },
+      "timestamp": 1778319179518
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778319180500
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778319180501
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778319192392
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "данные для настройки параметров"
+      },
+      "timestamp": 1778319192916
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "8458c487-87aa-4458-b690-5a3e0bd20f27",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "MAE, MSE, R²"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778319193891
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "position": {
+          "x": -519.1835804369055,
+          "y": -158.5546837392388
+        }
+      },
+      "timestamp": 1778319196151
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778319202446
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778319213343
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "данные для настройки параметров"
+      },
+      "timestamp": 1778319213886
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778319219326
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "использует"
+      },
+      "timestamp": 1778319220013
+    },
+    {
+      "name": "apply-element",
+      "payload": {
+        "id": "8458c487-87aa-4458-b690-5a3e0bd20f27",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "использует"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778319221158
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778319480603
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778319482077
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778319482580
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "использует"
+      },
+      "timestamp": 1778319484390
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778319485012
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778319485743
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778319490399
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778319492016
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750"
+        }
+      },
+      "timestamp": 1778319491647
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "19547ea1-5165-4005-a480-9958d6ad8a97"
+        }
+      },
+      "timestamp": 1778319493263
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778319494094
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778319494096
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778319498665
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "данные для оценки качества"
+      },
+      "timestamp": 1778319499443
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "dd86c0e8-1712-48c1-915b-a98d76dd21f7",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "использует"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778319501334
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778319511428
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778319511833
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "может использовать"
+      },
+      "timestamp": 1778319512260
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778319512780
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778319513951
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778319513628
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778319515018
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750"
+        }
+      },
+      "timestamp": 1778319514647
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "3625b357-72aa-463e-b92e-b859a91acd92"
+        }
+      },
+      "timestamp": 1778319516380
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778319517528
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778319517529
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778319523166
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "для более надежной оценки"
+      },
+      "timestamp": 1778319523813
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "4e267a47-541b-41fa-a475-2eb862edb987",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "3625b357-72aa-463e-b92e-b859a91acd92",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "может использовать"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778319575689
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778319585447
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778319585882
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778319586932
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "включает в себя"
+      },
+      "timestamp": 1778319586439
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778319587514
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320157887
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "метка – из конечного множества"
+      },
+      "timestamp": 1778320158260
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320159076
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320160221
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750"
+        }
+      },
+      "timestamp": 1778320159941
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "2244da16-ecf7-4bab-a6ef-be6ed49e1f19"
+        }
+      },
+      "timestamp": 1778320162386
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320163487
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320163487
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "dd277914-1d8e-4d7b-847b-3319f0efd2d4",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "2244da16-ecf7-4bab-a6ef-be6ed49e1f19",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "включает в себя"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320164575
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320171055
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320171405
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "включает в себя"
+      },
+      "timestamp": 1778320172027
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320173023
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320174157
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320173819
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750"
+        }
+      },
+      "timestamp": 1778320175021
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320175571
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "c8b0d53e-3188-48f0-aa97-9b4314eddbd8"
+        }
+      },
+      "timestamp": 1778320177123
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320178004
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320178005
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320182446
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "метка – непрерывное число"
+      },
+      "timestamp": 1778320183066
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "fb2ffc78-55e6-41c0-995a-4a648aa25bd5",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "c8b0d53e-3188-48f0-aa97-9b4314eddbd8",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "включает в себя"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320184612
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320192854
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320193175
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320194156
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "минимизирует"
+      },
+      "timestamp": 1778320193678
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320195343
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320194971
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320196793
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750"
+        }
+      },
+      "timestamp": 1778320196374
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "02d07e38-503e-4856-a1d5-679acab47993"
+        }
+      },
+      "timestamp": 1778320198805
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320199470
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320199471
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320203458
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "на обучающей выборке"
+      },
+      "timestamp": 1778320203871
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "dfea10fa-0407-4e7b-82de-b445d90717bb",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "02d07e38-503e-4856-a1d5-679acab47993",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "минимизирует"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320204656
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320210573
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320210924
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "решается с помощью"
+      },
+      "timestamp": 1778320211490
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320212074
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320212705
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320213342
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320214758
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750"
+        }
+      },
+      "timestamp": 1778320214457
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "03d98c04-a248-410d-98cd-01907856f72b"
+        }
+      },
+      "timestamp": 1778320217121
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320218554
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320218556
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320222746
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "множество методов"
+      },
+      "timestamp": 1778320223199
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "774d2072-a4c0-46f0-b556-c0cbe897c8a7",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "03d98c04-a248-410d-98cd-01907856f72b",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "решается с помощью"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320224274
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320235604
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320235958
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "может страдать от"
+      },
+      "timestamp": 1778320236534
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320237407
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320238527
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320238205
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320239560
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750"
+        }
+      },
+      "timestamp": 1778320239276
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "d88b670f-2d85-465e-a5fc-bdb09705a9ab"
+        }
+      },
+      "timestamp": 1778320243224
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320243871
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320243873
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320252478
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "хорош на обучении, плох на тесте"
+      },
+      "timestamp": 1778320252911
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "e5117d35-6154-4f33-bb89-dc178d451c28",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "d88b670f-2d85-465e-a5fc-bdb09705a9ab",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "может страдать от"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320253678
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320254906
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320261744
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "может страдать от"
+      },
+      "timestamp": 1778320262681
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320263307
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320264576
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320264123
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320266011
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750"
+        }
+      },
+      "timestamp": 1778320265657
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "d75a8402-4255-4df3-86fc-1270c30885eb"
+        }
+      },
+      "timestamp": 1778320269741
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320270505
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320270506
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320275609
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "плох и на обучении, и на тесте"
+      },
+      "timestamp": 1778320276099
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "16d05cbc-9d16-4666-acdc-94d1db3d6b9d",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "d75a8402-4255-4df3-86fc-1270c30885eb",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "может страдать от"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320277159
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320285410
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320285714
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "состоит из"
+      },
+      "timestamp": 1778320286283
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320288777
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320289946
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320289458
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320292778
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "80b08caf-72ac-4a97-a716-cb2586e71a97"
+        }
+      },
+      "timestamp": 1778320292443
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6"
+        }
+      },
+      "timestamp": 1778320293924
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320299344
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "числовые, категориальные, текстовые"
+      },
+      "timestamp": 1778320299941
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320300657
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320300657
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "e5e59355-d43f-47e6-823e-151249afd054",
+        "type": "edge",
+        "source": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "target": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "состоит из"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320342317
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320346492
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320356098
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320357180
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "содержит для каждого примера"
+      },
+      "timestamp": 1778320356706
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320358066
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320357759
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "49334ba9-587e-409f-ae53-1b9deccfdb74"
+        }
+      },
+      "timestamp": 1778320358962
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320359479
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "bb218385-2ff1-4d25-b837-6a39cef09536"
+        }
+      },
+      "timestamp": 1778320361779
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320368181
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320367859
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320367861
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "правильный ответ"
+      },
+      "timestamp": 1778320368720
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "89942ddb-4c6e-4fce-8c0c-58b544d5c056",
+        "type": "edge",
+        "source": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "target": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "содержит для каждого примера"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320369998
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320370877
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320377929
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "настраивают"
+      },
+      "timestamp": 1778320378406
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320379064
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320379912
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320379610
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320382547
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "03d98c04-a248-410d-98cd-01907856f72b"
+        }
+      },
+      "timestamp": 1778320382094
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "bd7a08a8-5c16-4959-a49f-923891ff1d3a"
+        }
+      },
+      "timestamp": 1778320385228
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320385959
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320385960
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320391230
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "в процессе обучения"
+      },
+      "timestamp": 1778320391701
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "3610abad-1892-4886-ac0c-a0c439cdd60b",
+        "type": "edge",
+        "source": "03d98c04-a248-410d-98cd-01907856f72b",
+        "target": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "настраивают"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320392499
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320393326
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320393999
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320399332
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "задаются до обучения"
+      },
+      "timestamp": 1778320398885
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320400345
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320400029
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "03d98c04-a248-410d-98cd-01907856f72b"
+        }
+      },
+      "timestamp": 1778320402680
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320403447
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "a2132725-dac9-4eff-b1b2-7f0b8009be1b"
+        }
+      },
+      "timestamp": 1778320405313
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320405944
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320405945
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320409933
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "подбираются отдельно"
+      },
+      "timestamp": 1778320410359
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "b1ca95cc-89cd-4129-827e-0d8b0551cd64",
+        "type": "edge",
+        "source": "03d98c04-a248-410d-98cd-01907856f72b",
+        "target": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "задаются до обучения"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320411513
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320417712
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320418118
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320419132
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "пример"
+      },
+      "timestamp": 1778320418634
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320420248
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320419829
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320423050
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "02d07e38-503e-4856-a1d5-679acab47993"
+        }
+      },
+      "timestamp": 1778320422614
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "178a2c64-cfc7-4043-83d9-1b89ff92d518"
+        }
+      },
+      "timestamp": 1778320428114
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320428878
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320428879
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320433314
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "для регрессии"
+      },
+      "timestamp": 1778320434019
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "c310466d-68e5-4d6d-af29-0840cbeee4ac",
+        "type": "edge",
+        "source": "02d07e38-503e-4856-a1d5-679acab47993",
+        "target": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "пример"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320435033
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320440562
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320440913
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "пример"
+      },
+      "timestamp": 1778320441467
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320442083
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320443215
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320442862
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "02d07e38-503e-4856-a1d5-679acab47993"
+        }
+      },
+      "timestamp": 1778320447182
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320451988
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "30c1c5bc-211a-45b2-a87c-129beb70bdda"
+        }
+      },
+      "timestamp": 1778320455380
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320458014
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320458020
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320463482
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "для классификации"
+      },
+      "timestamp": 1778320464489
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "6e920163-fe4e-48b9-b3aa-be07234dcb07",
+        "type": "edge",
+        "source": "02d07e38-503e-4856-a1d5-679acab47993",
+        "target": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "пример"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320466702
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320518045
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "для классификации"
+      },
+      "timestamp": 1778320518928
+    },
+    {
+      "name": "apply-element",
+      "payload": {
+        "id": "6e920163-fe4e-48b9-b3aa-be07234dcb07",
+        "type": "edge",
+        "source": "02d07e38-503e-4856-a1d5-679acab47993",
+        "target": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "пример"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320523929
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320525048
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320584580
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320585622
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "пример"
+      },
+      "timestamp": 1778320585155
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320586639
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320586286
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320589887
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "0475221a-6fa7-4580-a0f1-98b7e3b419e0"
+        }
+      },
+      "timestamp": 1778320589420
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "74feb0ce-61cd-4992-9e74-d9edc8f1db75"
+        }
+      },
+      "timestamp": 1778320591269
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320592017
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320592018
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320596238
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "для классификации"
+      },
+      "timestamp": 1778320596762
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "a00fceff-ccfd-4ee3-9827-172049977711",
+        "type": "edge",
+        "source": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "target": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "пример"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320597707
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320603384
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320603687
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "пример"
+      },
+      "timestamp": 1778320604126
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320604904
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320605616
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320606422
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "0475221a-6fa7-4580-a0f1-98b7e3b419e0"
+        }
+      },
+      "timestamp": 1778320613986
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320614557
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "74feb0ce-61cd-4992-9e74-d9edc8f1db75"
+        }
+      },
+      "timestamp": 1778320616787
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320617536
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320617537
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320623077
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "для регрессии"
+      },
+      "timestamp": 1778320623694
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "72822807-7b6d-44c3-8c2f-74a1a8a78a66",
+        "type": "edge",
+        "source": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "target": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "пример"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320624787
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320631435
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320631839
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "борется с помощью"
+      },
+      "timestamp": 1778320632366
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320632987
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320633518
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320637921
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "d88b670f-2d85-465e-a5fc-bdb09705a9ab"
+        }
+      },
+      "timestamp": 1778320641301
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320641940
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "b5241534-7ecf-4cff-abf0-bf5e15a3fb97"
+        }
+      },
+      "timestamp": 1778320644353
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320645069
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320645070
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320649591
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "также увеличение данных, упрощение модели"
+      },
+      "timestamp": 1778320650032
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "71c90777-5cf6-4a1d-ab05-1a3d06eec53c",
+        "type": "edge",
+        "source": "d88b670f-2d85-465e-a5fc-bdb09705a9ab",
+        "target": "b5241534-7ecf-4cff-abf0-bf5e15a3fb97",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "борется с помощью"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320651040
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 492.50765788165097,
+          "y": 298.4927067793801
+        }
+      },
+      "timestamp": 1778320660503
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 754.6031990717719,
+          "y": 299.4930714404111
+        }
+      },
+      "timestamp": 1778320661867
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 752.6024697497099,
+          "y": 301.4938007624731
+        }
+      },
+      "timestamp": 1778320663084
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 532.5222443228907,
+          "y": 318.5
+        }
+      },
+      "timestamp": 1778320668036
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "position": {
+          "x": 65.85492400925114,
+          "y": 208.11347020225622
+        }
+      },
+      "timestamp": 1778320670352
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": -384.4528002236295,
+          "y": 212.08235813843314
+        }
+      },
+      "timestamp": 1778320671653
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": -384.4528002236295,
+          "y": 212.08235813843314
+        }
+      },
+      "timestamp": 1778320671885
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -100.94952926468193,
+          "y": 149.93628064873008
+        }
+      },
+      "timestamp": 1778320673337
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "2244da16-ecf7-4bab-a6ef-be6ed49e1f19",
+        "position": {
+          "x": -300.31127967819873,
+          "y": 152.55155137752473
+        }
+      },
+      "timestamp": 1778320676337
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "2244da16-ecf7-4bab-a6ef-be6ed49e1f19",
+        "position": {
+          "x": -301.3116443392297,
+          "y": 150.55082205546273
+        }
+      },
+      "timestamp": 1778320676490
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.6936975863587753
+      },
+      "timestamp": 1778320680372
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 524.2212543074486,
+          "y": 344.4456428755139
+        }
+      },
+      "timestamp": 1778320681471
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 530.2234422736345,
+          "y": 344.4456428755139
+        }
+      },
+      "timestamp": 1778320681836
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7"
+      },
+      "timestamp": 1778320688787
+    },
+    {
+      "name": "click-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7"
+      },
+      "timestamp": 1778320688789
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": null
+      },
+      "timestamp": 1778320692437
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 505.80134841690426,
+          "y": 342.78792527835856
+        }
+      },
+      "timestamp": 1778320694838
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 499.7991604507182,
+          "y": 298.77188019299473
+        }
+      },
+      "timestamp": 1778320696770
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "position": {
+          "x": -511.0443657057632,
+          "y": 142.8956856407119
+        }
+      },
+      "timestamp": 1778320698003
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "position": {
+          "x": -549.9804185030804,
+          "y": 140.01153358165135
+        }
+      },
+      "timestamp": 1778320698824
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "02d07e38-503e-4856-a1d5-679acab47993",
+        "position": {
+          "x": -372.1465276500652,
+          "y": 114.96412150453773
+        }
+      },
+      "timestamp": 1778320701823
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "02d07e38-503e-4856-a1d5-679acab47993",
+        "position": {
+          "x": -402.43012427020085,
+          "y": 84.680524884402
+        }
+      },
+      "timestamp": 1778320702720
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "position": {
+          "x": -264.97630504392606,
+          "y": -9.352237959719858
+        }
+      },
+      "timestamp": 1778320704354
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -542.1060718300531,
+          "y": 19.4023954517449
+        }
+      },
+      "timestamp": 1778320706188
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "position": {
+          "x": -586.0323192413372,
+          "y": 131.3590774044697
+        }
+      },
+      "timestamp": 1778320707338
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -591.5019907649188,
+          "y": -57.436109837716444
+        }
+      },
+      "timestamp": 1778320708621
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -473.76799565079875,
+          "y": -105.39647025101114
+        }
+      },
+      "timestamp": 1778320710071
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "3625b357-72aa-463e-b92e-b859a91acd92",
+        "position": {
+          "x": -297.3518800163625,
+          "y": -101.9317514698948
+        }
+      },
+      "timestamp": 1778320712252
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "d88b670f-2d85-465e-a5fc-bdb09705a9ab",
+        "position": {
+          "x": 97.11829340454018,
+          "y": -165.9818402395635
+        }
+      },
+      "timestamp": 1778320713872
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "b5241534-7ecf-4cff-abf0-bf5e15a3fb97",
+        "position": {
+          "x": 117.94957050080693,
+          "y": -251.35136488852618
+        }
+      },
+      "timestamp": 1778320716136
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "d75a8402-4255-4df3-86fc-1270c30885eb",
+        "position": {
+          "x": -19.229711791748006,
+          "y": -202.61862218734885
+        }
+      },
+      "timestamp": 1778320717419
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "c8b0d53e-3188-48f0-aa97-9b4314eddbd8",
+        "position": {
+          "x": -228.67259140468752,
+          "y": -204.72871903034255
+        }
+      },
+      "timestamp": 1778320719187
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "d75a8402-4255-4df3-86fc-1270c30885eb",
+        "position": {
+          "x": -40.86085223470214,
+          "y": -241.55467498466624
+        }
+      },
+      "timestamp": 1778320720355
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "d75a8402-4255-4df3-86fc-1270c30885eb",
+        "position": {
+          "x": -42.30292826423238,
+          "y": -261.74373939809004
+        }
+      },
+      "timestamp": 1778320721606
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "3625b357-72aa-463e-b92e-b859a91acd92",
+        "position": {
+          "x": -314.6567923707258,
+          "y": -135.09950014909103
+        }
+      },
+      "timestamp": 1778320723055
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -480.97837579845014,
+          "y": -122.70138260537443
+        }
+      },
+      "timestamp": 1778320725223
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -478.09422373938963,
+          "y": -109.72269833960198
+        }
+      },
+      "timestamp": 1778320725622
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -479.5362997689199,
+          "y": -109.72269833960198
+        }
+      },
+      "timestamp": 1778320725772
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -490.55666869779964,
+          "y": -27.152513217580722
+        }
+      },
+      "timestamp": 1778320727741
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -485.304603887041,
+          "y": -111.16477436913226
+        }
+      },
+      "timestamp": 1778320729421
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -485.304603887041,
+          "y": -103.95439422148091
+        }
+      },
+      "timestamp": 1778320729805
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -486.74667991657134,
+          "y": -103.95439422148091
+        }
+      },
+      "timestamp": 1778320730173
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -585.3683527159612,
+          "y": 65.54882839671365
+        }
+      },
+      "timestamp": 1778320732485
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 20.770564074377194,
+          "y": 287.07031167400737
+        }
+      },
+      "timestamp": 1778320734321
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 66.91699701934594,
+          "y": 308.7014521169615
+        }
+      },
+      "timestamp": 1778320735038
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 68.35907304887618,
+          "y": 304.3752240283706
+        }
+      },
+      "timestamp": 1778320735389
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "2244da16-ecf7-4bab-a6ef-be6ed49e1f19",
+        "position": {
+          "x": -309.96410051641135,
+          "y": 211.11801529573418
+        }
+      },
+      "timestamp": 1778320737304
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -98.06537720562137,
+          "y": 196.08271359369883
+        }
+      },
+      "timestamp": 1778320739421
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "2244da16-ecf7-4bab-a6ef-be6ed49e1f19",
+        "position": {
+          "x": -262.3755915419124,
+          "y": 196.69725500043143
+        }
+      },
+      "timestamp": 1778320741038
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "02d07e38-503e-4856-a1d5-679acab47993",
+        "position": {
+          "x": -350.515387207111,
+          "y": 116.40619753406796
+        }
+      },
+      "timestamp": 1778320744224
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "position": {
+          "x": -538.4438102668382,
+          "y": 147.2219137293027
+        }
+      },
+      "timestamp": 1778320746338
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "position": {
+          "x": -538.4438102668382,
+          "y": 165.9689021131963
+        }
+      },
+      "timestamp": 1778320747126
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -468.5601943240093,
+          "y": 77.08543663295588
+        }
+      },
+      "timestamp": 1778320748188
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -533.4536156528713,
+          "y": 65.54882839671365
+        }
+      },
+      "timestamp": 1778320749174
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -533.4536156528713,
+          "y": 65.54882839671365
+        }
+      },
+      "timestamp": 1778320749437
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -533.4536156528713,
+          "y": 65.54882839671365
+        }
+      },
+      "timestamp": 1778320749541
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778320774106
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778320774928
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "пример"
+      },
+      "timestamp": 1778320775483
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778320776009
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778320776623
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778320777380
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320780276
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "0475221a-6fa7-4580-a0f1-98b7e3b419e0"
+        }
+      },
+      "timestamp": 1778320779775
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "e502f641-167b-4a4d-aeb9-b07cd2545bd7"
+        }
+      },
+      "timestamp": 1778320781657
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778320782740
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778320782742
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320789209
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "для регрессии"
+      },
+      "timestamp": 1778320789810
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "95e08ba8-a59d-40ec-800a-d2a1da8f1961",
+        "type": "edge",
+        "source": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "target": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "пример"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320793944
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": null
+      },
+      "timestamp": 1778320796973
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": 554.7827354786856,
+          "y": -36.45434327100378
+        }
+      },
+      "timestamp": 1778320798824
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": 315.2719758555726,
+          "y": -97.97504690084727
+        }
+      },
+      "timestamp": 1778320800323
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": "a00fceff-ccfd-4ee3-9827-172049977711"
+      },
+      "timestamp": 1778320801073
+    },
+    {
+      "name": "click-graph-element",
+      "payload": {
+        "id": "a00fceff-ccfd-4ee3-9827-172049977711"
+      },
+      "timestamp": 1778320801075
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320803066
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "30c1c5bc-211a-45b2-a87c-129beb70bdda"
+        }
+      },
+      "timestamp": 1778320806810
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Название"
+      },
+      "timestamp": 1778320815051
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Название",
+        "value": "для классификации"
+      },
+      "timestamp": 1778320815807
+    },
+    {
+      "name": "apply-element",
+      "payload": {
+        "id": "a00fceff-ccfd-4ee3-9827-172049977711",
+        "type": "edge",
+        "source": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "target": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "пример"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778320817663
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778320824232
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -678.9612245466493,
+          "y": 46.382823314638316
+        }
+      },
+      "timestamp": 1778320839561
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -724.4648414357539,
+          "y": -183.05753264313336
+        }
+      },
+      "timestamp": 1778320842291
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.5330360842187941
+      },
+      "timestamp": 1778320843389
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": -561.8714478601017,
+          "y": 363.2890870670832
+        }
+      },
+      "timestamp": 1778320845109
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -795.7805707918444,
+          "y": -46.05626309064346
+        }
+      },
+      "timestamp": 1778320849181
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -797.6573005117415,
+          "y": -47.93299281054054
+        }
+      },
+      "timestamp": 1778320849479
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.43715735875243084
+      },
+      "timestamp": 1778320851129
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 573.137798264892,
+          "y": 350.8309039382978
+        }
+      },
+      "timestamp": 1778320852424
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -868.8934427815802,
+          "y": 92.14962288932051
+        }
+      },
+      "timestamp": 1778320854822
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -889.4885025901872,
+          "y": 94.43796286805457
+        }
+      },
+      "timestamp": 1778320855660
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -880.3351426752508,
+          "y": 87.57294293185228
+        }
+      },
+      "timestamp": 1778320856328
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -880.3351426752508,
+          "y": 87.57294293185228
+        }
+      },
+      "timestamp": 1778320856496
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -735.8721210859205,
+          "y": -34.202952938135844
+        }
+      },
+      "timestamp": 1778320858108
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -735.8721210859205,
+          "y": -25.04959302319951
+        }
+      },
+      "timestamp": 1778320858758
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": -708.3252064990847,
+          "y": 159.62682895974754
+        }
+      },
+      "timestamp": 1778320860824
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": -708.3252064990847,
+          "y": 159.62682895974754
+        }
+      },
+      "timestamp": 1778320860941
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -850.5867229517075,
+          "y": 57.82452320830884
+        }
+      },
+      "timestamp": 1778320862757
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -848.2983829729734,
+          "y": 60.11286318704302
+        }
+      },
+      "timestamp": 1778320863044
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -680.9519615963019,
+          "y": 13.852186615280397
+        }
+      },
+      "timestamp": 1778320864592
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -692.3936614899724,
+          "y": 6.987166679077985
+        }
+      },
+      "timestamp": 1778320865140
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -694.6820014687065,
+          "y": 4.698826700343934
+        }
+      },
+      "timestamp": 1778320865414
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": -694.59516662668,
+          "y": 125.30172927873599
+        }
+      },
+      "timestamp": 1778320866928
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": -692.306826647946,
+          "y": 118.43670934253358
+        }
+      },
+      "timestamp": 1778320867528
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.5965408420749683
+      },
+      "timestamp": 1778320871679
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 566.4523236940984,
+          "y": 340.60413236201623
+        }
+      },
+      "timestamp": 1778320969316
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 565.4519590330674,
+          "y": 340.60413236201623
+        }
+      },
+      "timestamp": 1778320969466
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": null
+      },
+      "timestamp": 1778320969745
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.804802217023954
+      },
+      "timestamp": 1778321111502
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 708.939644713012,
+          "y": 337.3444038893082
+        }
+      },
+      "timestamp": 1778321112718
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 706.93891539095,
+          "y": 337.3444038893082
+        }
+      },
+      "timestamp": 1778321113154
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 1.504186534815286
+      },
+      "timestamp": 1778321116148
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 1.2761190661995745
+      },
+      "timestamp": 1778321116617
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.8458638264877811
+      },
+      "timestamp": 1778321117700
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 713.0192274951978,
+          "y": 313.05156138117655
+        }
+      },
+      "timestamp": 1778321119349
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 843.0666334292273,
+          "y": 301.0471854488046
+        }
+      },
+      "timestamp": 1778321119870
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 495.9400960514716,
+          "y": 301.0471854488046
+        }
+      },
+      "timestamp": 1778321121383
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 686.0093816473608,
+          "y": 322.0548433304555
+        }
+      },
+      "timestamp": 1778321122765
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 699.0141222407638,
+          "y": 324.0555726525175
+        }
+      },
+      "timestamp": 1778321131366
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 700.0144869017947,
+          "y": 324.0555726525175
+        }
+      },
+      "timestamp": 1778321133316
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 704.0159455459187,
+          "y": 323.0552079914865
+        }
+      },
+      "timestamp": 1778321135032
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 705.0163102069497,
+          "y": 323.0552079914865
+        }
+      },
+      "timestamp": 1778321135266
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 777.0425658011815,
+          "y": 323.0552079914865
+        }
+      },
+      "timestamp": 1778321136302
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 778.0429304622124,
+          "y": 322.05484333045547
+        }
+      },
+      "timestamp": 1778321136755
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 772.0407424960265,
+          "y": 318.0533846863315
+        }
+      },
+      "timestamp": 1778321137434
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 148.81355867371585,
+          "y": 241.02530578694484
+        }
+      },
+      "timestamp": 1778321169368
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 149.81392333474685,
+          "y": 241.02530578694484
+        }
+      },
+      "timestamp": 1778321169851
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 149.81392333474685,
+          "y": 242.0256704479758
+        }
+      },
+      "timestamp": 1778321170068
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 149.81392333474685,
+          "y": 238.0242118038518
+        }
+      },
+      "timestamp": 1778321170887
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778321304909
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778321318693
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778321319692
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "содержит"
+      },
+      "timestamp": 1778321319244
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778321320240
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778321326199
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778321327676
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "49334ba9-587e-409f-ae53-1b9deccfdb74"
+        }
+      },
+      "timestamp": 1778321327280
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "80b08caf-72ac-4a97-a716-cb2586e71a97"
+        }
+      },
+      "timestamp": 1778321333444
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778321334307
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778321334309
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "1f5d0412-9873-43fc-92cf-a2382d145367",
+        "type": "edge",
+        "source": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "target": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "содержит"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778321335713
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 349.7661211995321,
+          "y": 191.7931046084055
+        }
+      },
+      "timestamp": 1778321338658
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 315.4691406910295,
+          "y": 217.81150361485575
+        }
+      },
+      "timestamp": 1778321339690
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "position": {
+          "x": 301.46096995888485,
+          "y": 306.5698595310956
+        }
+      },
+      "timestamp": 1778321341143
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 304.8252501883907,
+          "y": 208.35026761251024
+        }
+      },
+      "timestamp": 1778321342361
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "position": {
+          "x": 464.6672909993457,
+          "y": 202.49626350529445
+        }
+      },
+      "timestamp": 1778321343591
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "position": {
+          "x": 509.60816201048704,
+          "y": 210.7748450073468
+        }
+      },
+      "timestamp": 1778321344528
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "position": {
+          "x": 510.79081651078025,
+          "y": 208.40953600676042
+        }
+      },
+      "timestamp": 1778321344942
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.8792258589930859
+      },
+      "timestamp": 1778321346209
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.8679614819947858
+      },
+      "timestamp": 1778321346661
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 539.0687118148678,
+          "y": 288.9218612759385
+        }
+      },
+      "timestamp": 1778321348373
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 631.1022606297195,
+          "y": 241.90472220748168
+        }
+      },
+      "timestamp": 1778321349573
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 508.057407322907,
+          "y": 237.9032635633577
+        }
+      },
+      "timestamp": 1778321350245
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 454.0377156272332,
+          "y": 252.90873347882263
+        }
+      },
+      "timestamp": 1778321350675
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "d88b670f-2d85-465e-a5fc-bdb09705a9ab",
+        "position": {
+          "x": 200.84734286174938,
+          "y": -27.67644096328469
+        }
+      },
+      "timestamp": 1778321356492
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "d88b670f-2d85-465e-a5fc-bdb09705a9ab",
+        "position": {
+          "x": 245.79659762653992,
+          "y": -26.523895969315696
+        }
+      },
+      "timestamp": 1778321357609
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "b5241534-7ecf-4cff-abf0-bf5e15a3fb97",
+        "position": {
+          "x": 512.1199584382016,
+          "y": -24.30000107663509
+        }
+      },
+      "timestamp": 1778321360209
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "b5241534-7ecf-4cff-abf0-bf5e15a3fb97",
+        "position": {
+          "x": 512.1199584382016,
+          "y": -24.30000107663509
+        }
+      },
+      "timestamp": 1778321360690
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "position": {
+          "x": 140.77034861723547,
+          "y": 88.24879082948125
+        }
+      },
+      "timestamp": 1778321363910
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 401.63902968178587,
+          "y": 86.18049825179727
+        }
+      },
+      "timestamp": 1778321365841
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 398.181394699879,
+          "y": 83.87540826385928
+        }
+      },
+      "timestamp": 1778321366409
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 399.3339396938479,
+          "y": 87.33304324576623
+        }
+      },
+      "timestamp": 1778321366890
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 314.0456101401427,
+          "y": 178.3840977693165
+        }
+      },
+      "timestamp": 1778321368309
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 314.0456101401427,
+          "y": 180.68918775725442
+        }
+      },
+      "timestamp": 1778321368590
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 312.89306514617357,
+          "y": 177.23155277534747
+        }
+      },
+      "timestamp": 1778321368928
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 97.17269789810086,
+          "y": 176.44272969781267
+        }
+      },
+      "timestamp": 1778321370759
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 108.69814783779077,
+          "y": 249.05306431785908
+        }
+      },
+      "timestamp": 1778321371609
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 131.74904771717064,
+          "y": 246.7479743299211
+        }
+      },
+      "timestamp": 1778321372724
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 139.8168626749535,
+          "y": 240.98524936007615
+        }
+      },
+      "timestamp": 1778321373762
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 342.85923498936734,
+          "y": 168.0111928235956
+        }
+      },
+      "timestamp": 1778321374809
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 352.0795949411192,
+          "y": 163.4010128477196
+        }
+      },
+      "timestamp": 1778321375210
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "position": {
+          "x": 354.0446973309976,
+          "y": 241.83334083186105
+        }
+      },
+      "timestamp": 1778321377274
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "position": {
+          "x": 354.0446973309976,
+          "y": 241.83334083186105
+        }
+      },
+      "timestamp": 1778321377508
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "position": {
+          "x": 352.8921523370286,
+          "y": 241.83334083186105
+        }
+      },
+      "timestamp": 1778321377827
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 82.18961297650398,
+          "y": 164.91727975812285
+        }
+      },
+      "timestamp": 1778321381440
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 79.88452298856592,
+          "y": 163.76473476415381
+        }
+      },
+      "timestamp": 1778321382076
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 48.765808151403164,
+          "y": 160.30709978224687
+        }
+      },
+      "timestamp": 1778321383474
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "position": {
+          "x": 219.14340820712684,
+          "y": 55.977530998349536
+        }
+      },
+      "timestamp": 1778321385924
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "position": {
+          "x": 216.83831821918878,
+          "y": 55.977530998349536
+        }
+      },
+      "timestamp": 1778321386193
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 64.90143806696904,
+          "y": 137.25619990286705
+        }
+      },
+      "timestamp": 1778321387224
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 64.90143806696904,
+          "y": 137.25619990286705
+        }
+      },
+      "timestamp": 1778321387526
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 365.9101348687471,
+          "y": 142.65520295627778
+        }
+      },
+      "timestamp": 1778321389258
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 365.9101348687471,
+          "y": 141.50265796230883
+        }
+      },
+      "timestamp": 1778321389529
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "position": {
+          "x": 369.0277822525945,
+          "y": 225.6977109162952
+        }
+      },
+      "timestamp": 1778321390874
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 596.0894974936346,
+          "y": 271.9156620384116
+        }
+      },
+      "timestamp": 1778321392075
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -60.031392404644734,
+          "y": 208.76070852735774
+        }
+      },
+      "timestamp": 1778321392995
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -56.573757422737714,
+          "y": 217.98106847910967
+        }
+      },
+      "timestamp": 1778321393360
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -66.94666236845863,
+          "y": 201.8454385635438
+        }
+      },
+      "timestamp": 1778321394013
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -70.40429735036564,
+          "y": 201.8454385635438
+        }
+      },
+      "timestamp": 1778321394312
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -70.40429735036564,
+          "y": 201.8454385635438
+        }
+      },
+      "timestamp": 1778321394574
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -27.76013257351301,
+          "y": 72.76039923901689
+        }
+      },
+      "timestamp": 1778321395910
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -12.77704765191611,
+          "y": 62.38749429329599
+        }
+      },
+      "timestamp": 1778321396693
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -12.77704765191611,
+          "y": 62.38749429329599
+        }
+      },
+      "timestamp": 1778321397125
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "19547ea1-5165-4005-a480-9958d6ad8a97",
+        "position": {
+          "x": -107.28573715737333,
+          "y": 269.84559320771416
+        }
+      },
+      "timestamp": 1778321397741
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 408.0209412198073,
+          "y": 267.9142033942876
+        }
+      },
+      "timestamp": 1778321398643
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "position": {
+          "x": 247.9570330563516,
+          "y": 53.672441010411546
+        }
+      },
+      "timestamp": 1778321400825
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "49334ba9-587e-409f-ae53-1b9deccfdb74",
+        "position": {
+          "x": 250.26212304428955,
+          "y": 49.06226103453563
+        }
+      },
+      "timestamp": 1778321401175
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 107.54560284382165,
+          "y": 130.34092993905313
+        }
+      },
+      "timestamp": 1778321402524
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "position": {
+          "x": 106.39305784985271,
+          "y": 126.88329495714612
+        }
+      },
+      "timestamp": 1778321402859
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 383.1983097782819,
+          "y": 140.35011296833986
+        }
+      },
+      "timestamp": 1778321403924
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97",
+        "position": {
+          "x": 382.04576478431295,
+          "y": 131.12975301658793
+        }
+      },
+      "timestamp": 1778321404841
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "position": {
+          "x": 386.3159571621293,
+          "y": 203.79935603088438
+        }
+      },
+      "timestamp": 1778321405894
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "f4baaba5-fea3-48e2-bdd2-5a203ea026d6",
+        "position": {
+          "x": 382.8583221802223,
+          "y": 209.56208100072934
+        }
+      },
+      "timestamp": 1778321406508
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 636.1040839348744,
+          "y": 269.9149327163496
+        }
+      },
+      "timestamp": 1778321407642
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "d75a8402-4255-4df3-86fc-1270c30885eb",
+        "position": {
+          "x": 167.46026063812377,
+          "y": -133.8112450675321
+        }
+      },
+      "timestamp": 1778321409425
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "d75a8402-4255-4df3-86fc-1270c30885eb",
+        "position": {
+          "x": 220.47733036069732,
+          "y": -131.50615507959415
+        }
+      },
+      "timestamp": 1778321410242
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "d75a8402-4255-4df3-86fc-1270c30885eb",
+        "position": {
+          "x": 220.47733036069732,
+          "y": -130.35361008562515
+        }
+      },
+      "timestamp": 1778321411042
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "c8b0d53e-3188-48f0-aa97-9b4314eddbd8",
+        "position": {
+          "x": 44.48057216596315,
+          "y": -193.20326909065264
+        }
+      },
+      "timestamp": 1778321412742
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "3625b357-72aa-463e-b92e-b859a91acd92",
+        "position": {
+          "x": -207.47010793160973,
+          "y": -171.98093995609872
+        }
+      },
+      "timestamp": 1778321415227
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "position": {
+          "x": -260.36612506805005,
+          "y": -27.792957863223673
+        }
+      },
+      "timestamp": 1778321417425
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "position": {
+          "x": -261.51867006201905,
+          "y": -27.792957863223673
+        }
+      },
+      "timestamp": 1778321417810
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "position": {
+          "x": -375.62062446494906,
+          "y": -96.94565750136307
+        }
+      },
+      "timestamp": 1778321419360
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -270.4205748497225,
+          "y": -27.152513217580722
+        }
+      },
+      "timestamp": 1778321420160
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -336.11563950595496,
+          "y": -9.864338308045877
+        }
+      },
+      "timestamp": 1778321421978
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -581.2553694220285,
+          "y": -47.4796895170004
+        }
+      },
+      "timestamp": 1778321424980
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "position": {
+          "x": -470.12931397040626,
+          "y": -147.65763723599866
+        }
+      },
+      "timestamp": 1778321426393
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "position": {
+          "x": -458.6038640307164,
+          "y": -152.26781721187464
+        }
+      },
+      "timestamp": 1778321426929
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -415.64124408981525,
+          "y": -52.50850308489848
+        }
+      },
+      "timestamp": 1778321428459
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -455.6279650794085,
+          "y": -230.73434355806987
+        }
+      },
+      "timestamp": 1778321433227
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -461.39069004925346,
+          "y": -230.73434355806987
+        }
+      },
+      "timestamp": 1778321433493
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -364.57691055585826,
+          "y": -228.4292535701319
+        }
+      },
+      "timestamp": 1778321434628
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": null
+      },
+      "timestamp": 1778321435562
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -582.7602682153189,
+          "y": -239.22079210787487
+        }
+      },
+      "timestamp": 1778321438064
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -581.6077232213499,
+          "y": -239.22079210787487
+        }
+      },
+      "timestamp": 1778321438244
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -583.9128132092878,
+          "y": -234.61061213199892
+        }
+      },
+      "timestamp": 1778321438861
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -346.13619065235434,
+          "y": -235.34452353394582
+        }
+      },
+      "timestamp": 1778321440192
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -344.9836456583854,
+          "y": -226.12416358219392
+        }
+      },
+      "timestamp": 1778321440745
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -347.2887356463233,
+          "y": -228.4292535701319
+        }
+      },
+      "timestamp": 1778321441142
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -348.4412806402923,
+          "y": -230.73434355806987
+        }
+      },
+      "timestamp": 1778321441530
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "position": {
+          "x": -496.637848831693,
+          "y": -108.47110744105301
+        }
+      },
+      "timestamp": 1778321442776
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "position": {
+          "x": -497.7903938256621,
+          "y": -125.75928235058785
+        }
+      },
+      "timestamp": 1778321443210
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "position": {
+          "x": -437.85805413927454,
+          "y": -125.75928235058785
+        }
+      },
+      "timestamp": 1778321443894
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -586.2179031972258,
+          "y": -210.40716725865013
+        }
+      },
+      "timestamp": 1778321445359
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "03d98c04-a248-410d-98cd-01907856f72b",
+        "position": {
+          "x": -520.8412937050417,
+          "y": -143.0474572601227
+        }
+      },
+      "timestamp": 1778321446828
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -362.27182056792026,
+          "y": -203.0732637028141
+        }
+      },
+      "timestamp": 1778321447710
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "a2132725-dac9-4eff-b1b2-7f0b8009be1b",
+        "position": {
+          "x": -432.5770652000286,
+          "y": -237.64961352188377
+        }
+      },
+      "timestamp": 1778321449276
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -628.8620679740785,
+          "y": -240.37333710184387
+        }
+      },
+      "timestamp": 1778321451561
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -646.1502428836134,
+          "y": -242.67842708978185
+        }
+      },
+      "timestamp": 1778321452130
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -648.4553328715513,
+          "y": -239.22079210787487
+        }
+      },
+      "timestamp": 1778321452695
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "bd7a08a8-5c16-4959-a49f-923891ff1d3a",
+        "position": {
+          "x": -648.4553328715513,
+          "y": -239.22079210787487
+        }
+      },
+      "timestamp": 1778321453014
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 903.2014484301507,
+          "y": 335.9390003443954
+        }
+      },
+      "timestamp": 1778321455012
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 820.1711815645782,
+          "y": 295.92441390315554
+        }
+      },
+      "timestamp": 1778321455896
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -525.3858006950884,
+          "y": 64.39628340274461
+        }
+      },
+      "timestamp": 1778321457129
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -532.3010706589024,
+          "y": 71.31155336655858
+        }
+      },
+      "timestamp": 1778321457444
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "02d07e38-503e-4856-a1d5-679acab47993",
+        "position": {
+          "x": -381.6341020442738,
+          "y": 18.439873046703845
+        }
+      },
+      "timestamp": 1778321458899
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "02d07e38-503e-4856-a1d5-679acab47993",
+        "position": {
+          "x": -383.9391920322118,
+          "y": 12.677148076858842
+        }
+      },
+      "timestamp": 1778321459329
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -527.6908906830264,
+          "y": -38.18022106049547
+        }
+      },
+      "timestamp": 1778321460928
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -524.2332557011194,
+          "y": 4.463943716357164
+        }
+      },
+      "timestamp": 1778321462280
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -624.5046701764217,
+          "y": 7.92157869826418
+        }
+      },
+      "timestamp": 1778321463443
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "position": {
+          "x": -437.0198507975671,
+          "y": 91.05347750521194
+        }
+      },
+      "timestamp": 1778321466393
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "position": {
+          "x": -437.0198507975671,
+          "y": 89.90093251124293
+        }
+      },
+      "timestamp": 1778321466545
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "30c1c5bc-211a-45b2-a87c-129beb70bdda",
+        "position": {
+          "x": -482.7416359182357,
+          "y": -49.70567100018531
+        }
+      },
+      "timestamp": 1778321470111
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "position": {
+          "x": -452.002935719164,
+          "y": 79.52802756552201
+        }
+      },
+      "timestamp": 1778321471996
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "position": {
+          "x": -448.54530073725704,
+          "y": 79.52802756552201
+        }
+      },
+      "timestamp": 1778321472380
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "178a2c64-cfc7-4043-83d9-1b89ff92d518",
+        "position": {
+          "x": -449.697845731226,
+          "y": 79.52802756552201
+        }
+      },
+      "timestamp": 1778321472682
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -751.1567061731871,
+          "y": -60.99623795588848
+        }
+      },
+      "timestamp": 1778321474615
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -650.0606440103071,
+          "y": 31.299238337818256
+        }
+      },
+      "timestamp": 1778321476997
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -833.3152980513765,
+          "y": -53.989091215886965
+        }
+      },
+      "timestamp": 1778321479312
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -834.1399457389545,
+          "y": -135.91166256387285
+        }
+      },
+      "timestamp": 1778321483065
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": -837.5274958880386,
+          "y": 26.233109825014395
+        }
+      },
+      "timestamp": 1778321484297
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": -835.2224059001007,
+          "y": 33.148379788828294
+        }
+      },
+      "timestamp": 1778321485181
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": -654.2728418469693,
+          "y": 22.77547484310744
+        }
+      },
+      "timestamp": 1778321486529
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -687.7667315048927,
+          "y": -99.03022275686517
+        }
+      },
+      "timestamp": 1778321488294
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -726.9532612998383,
+          "y": -115.16585267243103
+        }
+      },
+      "timestamp": 1778321489511
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -726.9532612998383,
+          "y": -115.16585267243103
+        }
+      },
+      "timestamp": 1778321489845
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": null
+      },
+      "timestamp": 1778321490512
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 733.1394560548823,
+          "y": 249.90763949572965
+        }
+      },
+      "timestamp": 1778321493063
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.7057427649951562
+      },
+      "timestamp": 1778321493930
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.4422895685002056
+      },
+      "timestamp": 1778321494480
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.48927162581298717
+      },
+      "timestamp": 1778321495644
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": null
+      },
+      "timestamp": 1778321532881
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778322140250
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536"
+      },
+      "timestamp": 1778322141760
+    },
+    {
+      "name": "click-graph-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536"
+      },
+      "timestamp": 1778322141761
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778322150665
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "metavertex"
+      },
+      "timestamp": 1778322151563
+    },
+    {
+      "name": "apply-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "type": "metavertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Метка / целевая переменная"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778322158439
+    },
+    {
+      "name": "apply-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "type": "metavertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Метка / целевая переменная"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778322159671
+    },
+    {
+      "name": "apply-element",
+      "payload": {
+        "id": "bb218385-2ff1-4d25-b837-6a39cef09536",
+        "type": "metavertex",
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "Метка / целевая переменная"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778322168403
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": null
+      },
+      "timestamp": 1778322169246
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.7446814299323169
+      },
+      "timestamp": 1778322172081
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 362.80856962883564,
+          "y": 296.35184914384774
+        }
+      },
+      "timestamp": 1778322172964
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97"
+      },
+      "timestamp": 1778322175762
+    },
+    {
+      "name": "click-graph-element",
+      "payload": {
+        "id": "80b08caf-72ac-4a97-a716-cb2586e71a97"
+      },
+      "timestamp": 1778322175764
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778322177653
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "metaedge"
+      },
+      "timestamp": 1778322180796
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778322211731
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": null
+      },
+      "timestamp": 1778322212397
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 387.0705457870314,
+          "y": 246.85958920374168
+        }
+      },
+      "timestamp": 1778322221816
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 400.07528638043436,
+          "y": 258.86396513611356
+        }
+      },
+      "timestamp": 1778322222214
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 460.09716604229413,
+          "y": 270.8683410684853
+        }
+      },
+      "timestamp": 1778322223482
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 459.09680138126316,
+          "y": 270.8683410684853
+        }
+      },
+      "timestamp": 1778322226548
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 609.1515005359125,
+          "y": 271.86870572951625
+        }
+      },
+      "timestamp": 1778334450955
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 761.206929012624,
+          "y": 319.8862094590041
+        }
+      },
+      "timestamp": 1778334451390
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 759.206199690562,
+          "y": 322.8873034420971
+        }
+      },
+      "timestamp": 1778334452255
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 758.2058350295309,
+          "y": 320.8865741200351
+        }
+      },
+      "timestamp": 1778334452507
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": "a00fceff-ccfd-4ee3-9827-172049977711"
+      },
+      "timestamp": 1778334628344
+    },
+    {
+      "name": "click-graph-element",
+      "payload": {
+        "id": "a00fceff-ccfd-4ee3-9827-172049977711"
+      },
+      "timestamp": 1778334628349
+    },
+    {
+      "name": "delete-element",
+      "payload": {
+        "id": "a00fceff-ccfd-4ee3-9827-172049977711"
+      },
+      "timestamp": 1778334629729
+    },
+    {
+      "name": "select-editor-tab",
+      "payload": {
+        "tabId": "create"
+      },
+      "timestamp": 1778334631595
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Имя"
+      },
+      "timestamp": 1778334632275
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "label": "Тип"
+      },
+      "timestamp": 1778334647157
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Имя",
+        "value": "оценивается с помощью"
+      },
+      "timestamp": 1778334646677
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Тип",
+        "value": "edge"
+      },
+      "timestamp": 1778334648579
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "source",
+        "label": "Источник"
+      },
+      "timestamp": 1778334649176
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750"
+        }
+      },
+      "timestamp": 1778334650585
+    },
+    {
+      "name": "focus-field",
+      "payload": {
+        "name": "target",
+        "label": "Цель"
+      },
+      "timestamp": 1778334655437
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "target": "0475221a-6fa7-4580-a0f1-98b7e3b419e0"
+        }
+      },
+      "timestamp": 1778334659314
+    },
+    {
+      "name": "update-field",
+      "payload": {
+        "label": "Направлен",
+        "value": true
+      },
+      "timestamp": 1778334660378
+    },
+    {
+      "name": "update-form",
+      "payload": {
+        "diff": {
+          "directed": true
+        }
+      },
+      "timestamp": 1778334660379
+    },
+    {
+      "name": "create-element",
+      "payload": {
+        "id": "fe113def-e372-4c80-9e6f-0d02994a18ea",
+        "type": "edge",
+        "source": "ea2ce69f-69e0-4d8e-8a90-e66bdb41d750",
+        "target": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "directed": true,
+        "attributes": {
+          "name": {
+            "type": "string",
+            "system": false,
+            "value": "оценивается с помощью"
+          }
+        },
+        "children": [],
+        "parents": []
+      },
+      "timestamp": 1778334662273
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -833.3152980513765,
+          "y": -114.43965159911868
+        }
+      },
+      "timestamp": 1778334665063
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -488.07543097380886,
+          "y": 156.9161972322769
+        }
+      },
+      "timestamp": 1778334667999
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -651.9636169016815,
+          "y": 273.7872806398581
+        }
+      },
+      "timestamp": 1778334668927
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "0475221a-6fa7-4580-a0f1-98b7e3b419e0",
+        "position": {
+          "x": -645.2468879702112,
+          "y": 269.757243280976
+        }
+      },
+      "timestamp": 1778334669332
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "74feb0ce-61cd-4992-9e74-d9edc8f1db75",
+        "position": {
+          "x": -833.0775784170673,
+          "y": 350.9751351715999
+        }
+      },
+      "timestamp": 1778334672029
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": -467.5477775520982,
+          "y": 432.49593966278877
+        }
+      },
+      "timestamp": 1778334673247
+    },
+    {
+      "name": "drag-graph-element",
+      "payload": {
+        "id": "e502f641-167b-4a4d-aeb9-b07cd2545bd7",
+        "position": {
+          "x": -534.7150668667999,
+          "y": 355.9252298440286
+        }
+      },
+      "timestamp": 1778334674295
+    },
+    {
+      "name": "select-element",
+      "payload": {
+        "id": null
+      },
+      "timestamp": 1778334674663
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 564.1247375923937,
+          "y": 200.03779488172736
+        }
+      },
+      "timestamp": 1778334675813
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 614.1429706439436,
+          "y": 217.04399411925434
+        }
+      },
+      "timestamp": 1778334676095
+    },
+    {
+      "name": "zoom-graph",
+      "payload": {
+        "zoom": 0.5458011146403021
+      },
+      "timestamp": 1778334676933
+    },
+    {
+      "name": "pan-graph",
+      "payload": {
+        "pan": {
+          "x": 581.6528898841401,
+          "y": 296.7570142281906
+        }
+      },
+      "timestamp": 1778334677779
+    }
+  ]
+}
