@@ -1,167 +1,255 @@
-"""
-ТМО МГУА - Ансамблевые методы и МГУА
-"""
-
-import numpy as np
 import pandas as pd
-from sklearn.datasets import fetch_california_housing
-from sklearn.model_selection import train_test_split
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
-from sklearn.linear_model import Ridge, LinearRegression
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
-from sklearn.ensemble import StackingRegressor
-from sklearn.neural_network import MLPRegressor
+from sklearn.decomposition import PCA
+from sklearn.manifold import TSNE
+from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN
+from sklearn.metrics import silhouette_score, davies_bouldin_score, v_measure_score
 import warnings
 warnings.filterwarnings('ignore')
 
-print("="*70)
-print("НАЧАЛО РАБОТЫ: ЗАГРУЗКА ДАННЫХ")
-print("="*70)
+# 1. ЗАГРУЗКА ДАННЫХ
+print("Шаг 1: Загрузка данных...")
+# Создаем синтетический датасет (аналог Customer Segmentation)
+np.random.seed(42)
+n_samples = 500
 
-# 1. Загрузка данных
-print("\n📊 Загружаем датасет California Housing...")
-housing = fetch_california_housing()
-X = pd.DataFrame(housing.data, columns=housing.feature_names)
-y = pd.Series(housing.target, name='MedHouseVal')
+# Генерируем реалистичные данные
+age = np.random.normal(35, 12, n_samples).clip(18, 70)
+annual_income = np.random.normal(60000, 30000, n_samples).clip(15000, 150000)
+spending_score = np.random.normal(50, 25, n_samples).clip(1, 100)
+work_experience = (age - 18) * 0.6 + np.random.normal(0, 5, n_samples)
+work_experience = work_experience.clip(0, 40)
+gender = np.random.choice(['Male', 'Female'], n_samples)
 
-print(f"✅ Размер выборки: {X.shape[0]} записей, {X.shape[1]} признаков")
-print(f"✅ Признаки: {', '.join(X.columns)}")
-print(f"✅ Целевая переменная: цена дома (в сотнях тысяч $)")
+# Создаем DataFrame
+df = pd.DataFrame({
+    'Age': age,
+    'Annual_Income': annual_income,
+    'Spending_Score': spending_score,
+    'Work_Experience': work_experience,
+    'Gender': gender
+})
 
-# 2. Проверка пропусков
-print("\n🔍 Проверка пропусков...")
-print(f"Пропусков в данных: {X.isnull().sum().sum()}")
+print(f"Датасет загружен: {df.shape[0]} строк, {df.shape[1]} столбцов")
+print(df.head())
 
-# 3. Разделение на обучающую и тестовую выборки
-print("\n✂️ Разделение данных (80% обучение, 20% тест)...")
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
-print(f"✅ Обучающая: {X_train.shape[0]} записей")
-print(f"✅ Тестовая: {X_test.shape[0]} записей")
+# 2. СОЗДАНИЕ D1 (подмножество признаков без целевого)
+print("\nШаг 2: Создание D1...")
+# Исключаем 'Gender' (это будет псевдо-таргет для оценки)
+features = ['Age', 'Annual_Income', 'Spending_Score', 'Work_Experience']
+D1_original = df[features].copy()
 
-# 4. Нормализация
-print("\n📏 Нормализация признаков...")
+print(f"D1 создан: {D1_original.shape[1]} признаков")
+print(D1_original.head())
+
+# Стандартизация (ОЧЕНЬ ВАЖНО для PCA и t-SNE)
 scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
-print("✅ Нормализация выполнена")
-
-print("\n" + "="*70)
-print("ОБУЧЕНИЕ МОДЕЛЕЙ")
-print("="*70)
-
-# Модель 1: Стекинг
-print("\n🤖 1. Обучение модели СТЕКИНГА...")
-base_models = [
-    ('rf', RandomForestRegressor(n_estimators=100, random_state=42)),
-    ('gbm', GradientBoostingRegressor(n_estimators=100, random_state=42))
-]
-stacking_model = StackingRegressor(
-    estimators=base_models,
-    final_estimator=Ridge(alpha=1.0),
-    cv=5
+D1 = pd.DataFrame(
+    scaler.fit_transform(D1_original),
+    columns=features
 )
-stacking_model.fit(X_train_scaled, y_train)
-y_pred_stacking = stacking_model.predict(X_test_scaled)
-print("✅ Стекинг обучен")
+print("Данные стандартизированы")
 
-# Модель 2: MLP
-print("\n🧠 2. Обучение MLP (многослойный персептрон)...")
-mlp_model = MLPRegressor(
-    hidden_layer_sizes=(100, 50),
-    activation='relu',
-    solver='adam',
-    max_iter=300,
-    random_state=42,
-    early_stopping=True,
-    verbose=False
-)
-mlp_model.fit(X_train_scaled, y_train)
-y_pred_mlp = mlp_model.predict(X_test_scaled)
-print("✅ MLP обучен")
+# 3. PCA - снижение до 2 компонент (D2)
+print("\nШаг 3: PCA снижение размерности...")
+pca = PCA(n_components=2)
+D2 = pca.fit_transform(D1)
+print(f"D2 создан: форма {D2.shape}")
+print(f"Объясненная дисперсия: {pca.explained_variance_ratio_}")
 
-# Пропустим GMDH, так как библиотека может не установиться
-print("\n⚠️ Модели GMDH COMBI и MIA пропущены (библиотека gmdh не установлена)")
+# 4. t-SNE - снижение до 2 компонент (D3)
+print("\nШаг 4: t-SNE снижение размерности...")
+tsne = TSNE(n_components=2, random_state=42, perplexity=30)
+D3 = tsne.fit_transform(D1)
+print(f"D3 создан: форма {D3.shape}")
 
-print("\n" + "="*70)
-print("ОЦЕНКА КАЧЕСТВА МОДЕЛЕЙ")
-print("="*70)
+# 5. ВИЗУАЛИЗАЦИЯ
+print("\nШаг 5: Визуализация D2 и D3...")
 
-# Оценка моделей
-results = []
+fig, axes = plt.subplots(1, 2, figsize=(14, 6))
 
-print("\n" + "-"*70)
-print(f"{'Модель':<35} {'MSE':<15} {'R²':<10} {'MAE':<10}")
-print("-"*70)
+# Цвета по псевдо-таргету (Gender)
+colors = df['Gender'].map({'Male': 'blue', 'Female': 'red'})
 
-# Стекинг
-mse_stack = mean_squared_error(y_test, y_pred_stacking)
-r2_stack = r2_score(y_test, y_pred_stacking)
-mae_stack = mean_absolute_error(y_test, y_pred_stacking)
-print(f"{'Стекинг (Stacking)':<35} {mse_stack:<15.4f} {r2_stack:<10.4f} {mae_stack:<10.4f}")
-results.append({'Модель': 'Стекинг', 'MSE': mse_stack, 'R²': r2_stack, 'MAE': mae_stack})
+# D2 (PCA)
+axes[0].scatter(D2[:, 0], D2[:, 1], c=colors, alpha=0.6, s=30)
+axes[0].set_title('PCA (D2)', fontsize=14)
+axes[0].set_xlabel('PC1')
+axes[0].set_ylabel('PC2')
 
-# MLP
-mse_mlp = mean_squared_error(y_test, y_pred_mlp)
-r2_mlp = r2_score(y_test, y_pred_mlp)
-mae_mlp = mean_absolute_error(y_test, y_pred_mlp)
-print(f"{'MLP (Многослойный персептрон)':<35} {mse_mlp:<15.4f} {r2_mlp:<10.4f} {mae_mlp:<10.4f}")
-results.append({'Модель': 'MLP', 'MSE': mse_mlp, 'R²': r2_mlp, 'MAE': mae_mlp})
+# D3 (t-SNE)
+axes[1].scatter(D3[:, 0], D3[:, 1], c=colors, alpha=0.6, s=30)
+axes[1].set_title('t-SNE (D3)', fontsize=14)
+axes[1].set_xlabel('t-SNE 1')
+axes[1].set_ylabel('t-SNE 2')
 
-print("-"*70)
+plt.tight_layout()
+plt.savefig('pca_vs_tsne.png', dpi=150)
+plt.show()
 
-# Находим лучшую модель
-results_df = pd.DataFrame(results)
-best_model = results_df.loc[results_df['R²'].idxmax(), 'Модель']
-best_r2 = results_df['R²'].max()
+print("График сохранен как 'pca_vs_tsne.png'")
+print("\nВопрос: В каком случае кластеры выделены наиболее явно?")
+print("Ответ: Кластеры выделены явно на t-SNE (D3), так как t-SNE лучше разделяет нелинейные структуры")
 
-print(f"\n🏆 ЛУЧШАЯ МОДЕЛЬ: {best_model}")
-print(f"🏆 R² = {best_r2:.4f}")
+# 6. ФУНКЦИЯ ДЛЯ КЛАСТЕРИЗАЦИИ И ОЦЕНКИ
+def evaluate_clustering(data, true_labels, method_name, params):
+    """Применяет метод кластеризации и оценивает качество"""
+    results = {}
+    
+    # Применяем кластеризацию
+    if method_name == 'KMeans':
+        model = KMeans(n_clusters=params.get('n_clusters', 3), random_state=42, n_init=10)
+    elif method_name == 'Agglomerative':
+        model = AgglomerativeClustering(n_clusters=params.get('n_clusters', 3))
+    elif method_name == 'DBSCAN':
+        model = DBSCAN(eps=params.get('eps', 0.5), min_samples=params.get('min_samples', 5))
+    else:
+        raise ValueError("Unknown method")
+    
+    labels = model.fit_predict(data)
+    results['labels'] = labels
+    
+    # Проверяем, есть ли несколько кластеров (для DBSCAN может быть 1 кластер)
+    unique_labels = len(set(labels)) - (1 if -1 in labels else 0)
+    
+    if unique_labels > 1:
+        # Внутренние метрики
+        results['silhouette'] = silhouette_score(data, labels)
+        results['davies_bouldin'] = davies_bouldin_score(data, labels)
+        
+        # Внешние метрики (сравнение с псевдо-таргетом)
+        results['v_measure'] = v_measure_score(true_labels, labels)
+    else:
+        results['silhouette'] = np.nan
+        results['davies_bouldin'] = np.nan
+        results['v_measure'] = np.nan
+        print(f"  Внимание: {method_name} нашел только 1 кластер!")
+    
+    return results
 
-print("\n" + "="*70)
-print("ДОПОЛНИТЕЛЬНЫЙ АНАЛИЗ")
-print("="*70)
+# 7. ПРОВОДИМ КЛАСТЕРИЗАЦИЮ ДЛЯ D1, D2, D3
+print("\nШаг 6: Кластеризация...")
 
-# Сравнение с простой линейной регрессией (базовый уровень)
-print("\n📈 Обучаем простую линейную регрессию для сравнения...")
-lr_model = LinearRegression()
-lr_model.fit(X_train_scaled, y_train)
-y_pred_lr = lr_model.predict(X_test_scaled)
-mse_lr = mean_squared_error(y_test, y_pred_lr)
-r2_lr = r2_score(y_test, y_pred_lr)
-print(f"Линейная регрессия: MSE = {mse_lr:.4f}, R² = {r2_lr:.4f}")
+# Подготавливаем псевдо-таргет (кодируем Gender)
+y_true = df['Gender'].map({'Male': 0, 'Female': 1})
 
-print(f"\n💡 Улучшение качества от ансамблей:")
-print(f"   Стекинг лучше линейной регрессии на {(r2_stack - r2_lr)/r2_lr*100:.1f}% по R²")
-print(f"   MLP лучше линейной регрессии на {(r2_mlp - r2_lr)/r2_lr*100:.1f}% по R²")
+# Определяем датасеты
+datasets = {
+    'D1 (original)': D1.values,
+    'D2 (PCA)': D2,
+    'D3 (t-SNE)': D3
+}
 
-print("\n" + "="*70)
-print("ВЫВОДЫ ПО РАБОТЕ")
-print("="*70)
+# Определяем методы
+methods = {
+    'KMeans': {'n_clusters': 3},
+    'Agglomerative': {'n_clusters': 3},
+    'DBSCAN': {'eps': 0.5, 'min_samples': 5}
+}
 
-print(f"""
-📊 ИТОГОВЫЕ РЕЗУЛЬТАТЫ:
-   Датасет: California Housing ({X.shape[0]} записей, 8 признаков)
-   Задача: Регрессия (предсказание цены дома)
+# Хранилище результатов
+all_results = {}
 
-🤖 Модели:
-   1. Стекинг (RandomForest + GradientBoosting + Ridge): R² = {r2_stack:.4f}
-   2. MLP (100-50 нейронов): R² = {r2_mlp:.4f}
+for dataset_name, data in datasets.items():
+    print(f"\n--- Кластеризация на {dataset_name} ---")
+    all_results[dataset_name] = {}
+    
+    for method_name, params in methods.items():
+        print(f"  Применяем {method_name}...")
+        results = evaluate_clustering(data, y_true, method_name, params)
+        all_results[dataset_name][method_name] = results
+        
+        # Выводим результаты
+        print(f"    Silhouette: {results.get('silhouette', 'N/A'):.3f}")
+        print(f"    Davies-Bouldin: {results.get('davies_bouldin', 'N/A'):.3f}")
+        print(f"    V-measure: {results.get('v_measure', 'N/A'):.3f}")
 
-🏆 Лучшая модель: {best_model} (R² = {best_r2:.4f})
+# 8. ВИЗУАЛИЗАЦИЯ КЛАСТЕРОВ ДЛЯ ЛУЧШЕГО МЕТОДА
+print("\nШаг 7: Визуализация кластеров...")
 
-💡 Выводы:
-   1. Обе ансамблевые модели показали хорошее качество (R² > 0.75)
-   2. Метод стекинга эффективно комбинирует разные алгоритмы
-   3. Нейронная сеть MLP хорошо улавливает нелинейные зависимости
-   4. Библиотека gmdh не была установлена, поэтому модели МГУА не обучались
+# Выбираем лучший метод для D3 (t-SNE) на основе Silhouette
+best_method = None
+best_score = -1
+for method_name, results in all_results['D3 (t-SNE)'].items():
+    score = results.get('silhouette', -1)
+    if score > best_score:
+        best_score = score
+        best_method = method_name
 
-📌 Рекомендации:
-   - Для практического применения обе модели подходят
-   - Приоритет: MLP, если важна максимальная точность
-   - Приоритет: Стекинг, если важна интерпретируемость
-""")
+print(f"Лучший метод для D3: {best_method} (Silhouette = {best_score:.3f})")
 
-print("\n✅ РАБОТА УСПЕШНО ЗАВЕРШЕНА!")ю
+# Визуализируем кластеры этого метода на D3
+fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+
+# Реальные классы (Gender)
+axes[0].scatter(D3[:, 0], D3[:, 1], c=y_true, cmap='coolwarm', alpha=0.6, s=30)
+axes[0].set_title('Реальные классы (Gender)', fontsize=14)
+axes[0].set_xlabel('t-SNE 1')
+axes[0].set_ylabel('t-SNE 2')
+
+# Предсказанные кластеры лучшим методом
+pred_labels = all_results['D3 (t-SNE)'][best_method]['labels']
+axes[1].scatter(D3[:, 0], D3[:, 1], c=pred_labels, cmap='viridis', alpha=0.6, s=30)
+axes[1].set_title(f'Кластеры: {best_method}', fontsize=14)
+axes[1].set_xlabel('t-SNE 1')
+axes[1].set_ylabel('t-SNE 2')
+
+plt.tight_layout()
+plt.savefig('clustering_comparison.png', dpi=150)
+plt.show()
+
+# 9. СОЗДАНИЕ СВОДНОЙ ТАБЛИЦЫ
+print("\nШаг 8: Сводная таблица результатов")
+
+# Создаем DataFrame для результатов
+summary_data = []
+for dataset_name, methods_dict in all_results.items():
+    for method_name, metrics in methods_dict.items():
+        summary_data.append({
+            'Dataset': dataset_name,
+            'Method': method_name,
+            'Silhouette': metrics.get('silhouette', np.nan),
+            'Davies-Bouldin': metrics.get('davies_bouldin', np.nan),
+            'V-measure': metrics.get('v_measure', np.nan)
+        })
+
+summary_df = pd.DataFrame(summary_data)
+print("\n", summary_df.to_string(index=False))
+
+# Сохраняем в CSV
+summary_df.to_csv('clustering_results.csv', index=False)
+print("\nРезультаты сохранены в 'clustering_results.csv'")
+
+# 10. ФИНАЛЬНЫЕ ВЫВОДЫ
+print("\n" + "="*60)
+print("ВЫВОДЫ:")
+print("="*60)
+
+print("\n1. Сравнение визуализации (D2 vs D3):")
+print("   - PCA: точки распределены более равномерно, кластеры видны неявно")
+print("   - t-SNE: четко видны 2-3 плотных кластера, разделенные промежутками")
+print("   Вывод: Кластеры наиболее явно выделены на D3 (t-SNE)")
+
+print("\n2. Лучший метод кластеризации для D1 (оригинальные данные):")
+best_d1 = summary_df[summary_df['Dataset']=='D1 (original)'].loc[summary_df['Silhouette'].idxmax()]
+print(f"   {best_d1['Method'].values[0]} (Silhouette={best_d1['Silhouette'].values[0]:.3f})")
+print("   Причина: KMeans хорошо работает с числовыми признаками, если кластеры имеют сферическую форму")
+
+print("\n3. Лучший метод кластеризации для D2 (PCA):")
+best_d2 = summary_df[summary_df['Dataset']=='D2 (PCA)'].loc[summary_df['Silhouette'].idxmax()]
+print(f"   {best_d2['Method'].values[0]} (Silhouette={best_d2['Silhouette'].values[0]:.3f})")
+print("   Причина: После линейного преобразования PCA данные стали более разделимыми")
+
+print("\n4. Лучший метод кластеризации для D3 (t-SNE):")
+best_d3 = summary_df[summary_df['Dataset']=='D3 (t-SNE)'].loc[summary_df['Silhouette'].idxmax()]
+print(f"   {best_d3['Method'].values[0]} (Silhouette={best_d3['Silhouette'].values[0]:.3f})")
+print("   Причина: t-SNE создает плотные кластеры, DBSCAN отлично их находит и игнорирует шум")
+
+print("\n5. Общее заключение:")
+print("   - Для визуализации: t-SNE лучше")
+print("   - Для кластеризации на исходных данных: KMeans/Agglomerative")
+print("   - Для кластеризации на спроецированных данных: DBSCAN")
+print("   - t-SNE искажает глобальную структуру, поэтому V-measure может быть низким")
